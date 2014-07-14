@@ -1,0 +1,169 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'bikoblack';
+  src: url('fonts/biko_black-webfont.eot');
+  src: url('fonts/biko_black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/biko_black-webfont.woff') format('woff'),
+  url('fonts/biko_black-webfont.ttf') format('truetype'),
+  url('fonts/biko_black-webfont.svg#bikoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bikobold';
+  src: url('fonts/biko_bold-webfont.eot');
+  src: url('fonts/biko_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/biko_bold-webfont.woff') format('woff'),
+  url('fonts/biko_bold-webfont.ttf') format('truetype'),
+  url('fonts/biko_bold-webfont.svg#bikobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bikoregular';
+  src: url('fonts/biko_regular-webfont.eot');
+  src: url('fonts/biko_regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/biko_regular-webfont.woff') format('woff'),
+  url('fonts/biko_regular-webfont.ttf') format('truetype'),
+  url('fonts/biko_regular-webfont.svg#bikoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body {
+  font-family: 'Source Sans Pro', Helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  width:100%;
+  height:100%;
+}
+body { font-size: 1em; }
+a.link { 
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a.link:hover { 
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #fff;
+}
+.spacing3 { margin-bottom: 3% !important; }
+.spacing5 { margin-bottom: 5% !important; }
+.spacing8 { margin-bottom: 8% !important; }
+.spacing10 { margin-bottom: 10% !important; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal}
+
+
+#intro { 
+    /*height: 100%;*/
+    background: url("../images/1.jpg") no-repeat fixed center bottom #7db9c3;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro .overlay { 
+    background: url("../images/pattern.png");
+    height: 100%; 
+}
+
+#intro .wrapper {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#intro .jay {
+  background: url("../images/img-ajay.png") no-repeat center center transparent;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 116px 20px;
+}
+
+#intro h1, #intro h2, #intro h3, #intro p {
+  color: #fff;
+  line-height: 100%;
+  text-align: center;
+}
+
+#intro h1 {
+  font-family: 'bikoblack', 'Source Sans Pro', Helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  text-transform:uppercase;
+  font-size: 10em;
+  margin: 0 0 .6em;
+}
+
+#intro h2 {
+  font-family: 'bikoregular', 'Source Sans Pro', Helvetica, HelveticaNeue, "Helvetica Neue", Arial, sans-serif;
+  text-transform:uppercase;
+  font-size: 2.4em;
+  margin: 0 0 .6em;
+  letter-spacing: 10px;
+}
+
+#intro h2.arrow  {
+  font-size: 2.2em;
+  letter-spacing: 0px;
+  margin: 0;
+}
+#intro p.kicker {
+  text-transform: uppercase;
+  letter-spacing:2px;
+  font-weight: normal;
+  margin: 0 0 1em;
+  background: url("../images/img-divider-white.png") no-repeat center top transparent;
+  padding-top: 1.6em;
+  line-height: 1.8em;
+}
+
+.container { height: 100%;}
+.main-content { height: 100%; }
+
+#footer { background: #454545; }
+#footer .wrapper {
+  max-width: 62.5em;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 2em 1.25em;
+}
+
+#footer p {
+  text-align: center;
+  margin: 0;
+  color: #e8654f;
+  font-size: .75em;
+  letter-spacing: 2px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #intro .jay { background: url("../images/img-ajay.png") no-repeat center 10px transparent; vertical-align: top; padding: 0 20px 40px; }
+  #intro h1 { font-size: 3.5em; margin-top: 2em;  }
+  #intro h2 { font-size: 1.6em; letter-spacing: 0px; }
+  #intro h3 { font-size: 1.4em; padding-left: 10px; padding-right: 10px; }
+  #intro, .wrapper-img { background-image: none; }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) { }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #intro .jay { background: url("../images/img-ajay.png") no-repeat center 20px transparent; }
+  #intro { background-image: none; }
+}
+@media screen and (max-height: 29em) {
+  .container { height: auto; }
+  .main-content {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
