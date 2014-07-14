@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal}
   max-width: 62.5em;
   margin: 0px auto;
   overflow: hidden;
-  padding: 2em 1.25em;
+  padding: .65em 1.25em;
 }
 
 #footer p {
